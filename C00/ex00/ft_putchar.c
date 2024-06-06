@@ -1,13 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fturedi <fturedi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/05 14:49:39 by fturedi           #+#    #+#             */
+/*   Updated: 2024/02/06 15:11:11 by fturedi          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void    ft_putchar(char c)
-
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write (1, &c, 1);
 }
 
-int main(void)
+int main()
 {
-    ft_putchar('m');
-    return 0;
+	ft_putchar('z');
 }
