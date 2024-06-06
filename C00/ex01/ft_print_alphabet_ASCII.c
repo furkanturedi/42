@@ -6,21 +6,26 @@
 /*   By: fturedi <fturedi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 14:51:37 by fturedi           #+#    #+#             */
-/*   Updated: 2024/06/07 02:13:54 by fturedi           ###   ########.fr       */
+/*   Updated: 2024/02/05 20:57:01 by fturedi           ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_print_alphabet(void)
 {
-	char	a;
+	int i;
 
-	a = 'a';
-	while (a <= 'z')
+	i = 0;
+	while (i < 26)
 	{
-		write (1, &a, 1);
-		a++;
+		ft_putchar(i + 97);
+		i++;
 	}
 }
 

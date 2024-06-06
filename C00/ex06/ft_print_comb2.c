@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fturedi <fturedi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/05 15:37:24 by fturedi           #+#    #+#             */
+/*   Updated: 2024/02/06 15:22:22 by fturedi          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -5,44 +17,33 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-char	ft_helper(char c, unsigned n)
-{
-	char result;
-
-	result = 0;
-	if (n == 0)
-		result = c / 10 + '0';
-	else
-		result = c % 10 + '0';
-	return (result);
-}
-
 void	ft_print_comb2(void)
 {
-	char a;
-	char b;
+	int	i;
+	int	j;
 
-	a = 0;
-	while (a <= 98)
+	i = 0;
+	while (i <= 98)
 	{
-		b = a + 1;
-		while (b <= 99)
+		j = i + 1;
+		while (j <= 99)
 		{
-			ft_putchar(ft_helper(a, 0));
-			ft_putchar(ft_helper(a, 1));
-			ft_putchar(' ');
-			ft_putchar(ft_helper(b, 0));
-			ft_putchar(ft_helper(b, 1));
-			if (!(a == 98 && b == 99))
+			ft_putchar((i / 10) + '0');
+			ft_putchar((i % 10) + '0');
+			write(1, " ", 1);
+			ft_putchar((j / 10) + '0');
+			ft_putchar((j % 10) + '0');
+			if (i != 98)
+			{
 				write(1, ", ", 2);
-			b++;
+			}
+			j++;
 		}
-		a++;
+		i++;
 	}
 }
 
-int main()
+int	main()
 {
-    ft_print_comb2();
-    return 0;
+	ft_print_comb2();
 }
