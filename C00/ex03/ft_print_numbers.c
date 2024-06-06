@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: fturedi <fturedi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 14:58:01 by fturedi           #+#    #+#             */
-/*   Updated: 2024/06/07 02:17:00 by marvin           ###   ########.fr       */
+/*   Updated: 2024/02/05 21:28:28 by fturedi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_numbers(void)
 {
 	char	a;
 

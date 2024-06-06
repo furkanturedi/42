@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: fturedi <fturedi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 15:49:14 by fturedi           #+#    #+#             */
-/*   Updated: 2024/06/07 02:19:13 by marvin           ###   ########.fr       */
+/*   Updated: 2024/02/06 15:21:15 by fturedi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 
 void	ft_putchar(char c)
 {
