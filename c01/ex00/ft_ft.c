@@ -22,8 +22,6 @@ int main()
 	a = 25;
 
 	printf("%d\n",a);
-	
 	ft_ft(&a);
-
 	printf("%d",a);	
 }
