@@ -19,11 +19,11 @@ void	ft_ft(int *nbr)
 int main()
 {
 	int a;
-	int nbr;
 	a = 25;
 
 	printf("%d\n",a);
-	nbr = &a;
+	
 	ft_ft(&a);
+
 	printf("%d",a);	
 }
