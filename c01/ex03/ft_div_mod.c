@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-    if(b != 0)
-    {
-    *div = a / b;
-    *mod = a % b;
-    } 
+	if(b != 0)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
 }
 
 #include <stdio.h>
@@ -24,14 +24,14 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 int main()
 {
 
-    int bolum;
-    int kalan;
-    
-    int x = 104;
-    int y = 5;
-    
-    ft_div_mod(x, y, &bolum, &kalan);
-    
-    printf("bolum:%d     kalan:%d",bolum,kalan);
-    
+	int bolum;
+	int kalan;
+	
+	int x = 104;
+	int y = 5;
+	
+	ft_div_mod(x, y, &bolum, &kalan);
+	
+	printf("bolum:%d     kalan:%d",bolum,kalan);
+	
 }

@@ -10,25 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_div_mod(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-    int div;
-    int mod;
-    
-    div = *a / *b;
-    mod = *a % *b;
+	int	div;
+	int	mod;
 
-    *a = div;
-    *b = mod;
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }
 
 #include <stdio.h>
 
 int main()
 {
-    int f = 26;
-    int z = 12;
-     printf("f:%d    z:%d ",f,z);
-    ft_ultimate_div_mod(&f, &z);
-    printf("f:%d    z:%d ",f,z);
+	int f = 26;
+	int z = 12;
+	 printf("f:%d    z:%d ",f,z);
+	ft_ultimate_div_mod(&f, &z);
+	printf("f:%d    z:%d ",f,z);
 }
