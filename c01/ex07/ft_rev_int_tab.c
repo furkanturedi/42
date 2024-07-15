@@ -26,7 +26,7 @@ void	ft_rev_int_tab(int *tab, int size)
 }
 
 
-#include <stdio.h>		                      
+#include <stdio.h>
 int main()  
 {
 	int tab[6] = {1, 3, 5, 7, 9, 11};
