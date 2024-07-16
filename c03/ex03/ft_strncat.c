@@ -28,3 +28,14 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	dest[i] = '\0';
 	return (dest);
 }
+
+
+#include <stdio.h>
+
+int	main()
+{
+	char src[] = "Furkan";
+	char dest[] = "Turedi ";
+	
+	printf("%s", ft_strncat(dest, src, 3));
+}

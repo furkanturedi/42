@@ -28,3 +28,18 @@ char	*ft_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
+#include <stdio.h>
+
+int main()
+{
+	char *t;
+
+	char a[20] = "Furkan";
+	char b[20] = "Turedi";
+	
+	printf("%s\n", a);
+	t = ft_strcat(a, b);
+	printf("%s\n", a);
+	return (0);
+}

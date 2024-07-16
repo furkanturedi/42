@@ -33,3 +33,12 @@ char	*ft_strstr(char *str, char *to_find)
 	}
 	return (0);
 }
+
+#include <stdio.h>
+
+int	main()
+{
+	char str[] = "asdasd dsadsa Furkan Turedi";
+	char to_find[] = "Furkan";
+	printf("%s", ft_strstr(str, to_find));
+}

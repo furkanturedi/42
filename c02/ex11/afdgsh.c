@@ -12,6 +12,7 @@ int	ft_char_is_printable(char c)
 	else
 		return (0);
 }
+
 void	ft_putstr_non_printable(char *str)
 {
 	int	i;
