@@ -39,5 +39,5 @@ void	ft_putnbr(int nb)
 
 int main()
 {
-	ft_putnbr('3456');
+	ft_putnbr(3456);
 }
